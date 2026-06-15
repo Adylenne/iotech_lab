@@ -1,0 +1,20 @@
+<header class="navbar">
+  <a href="#inicio" class="brand">
+    <img src="assets/img/logo-iotech.png" alt="iotech labs">
+    <span>iotech labs</span>
+  </a>
+
+  <button class="menu-toggle" (click)="toggleMenu()" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="menu" [class.open]="menuOpen">
+    <a href="#inicio" (click)="closeMenu()">Inicio</a>
+    <a href="#servicios" (click)="closeMenu()">Productos & Servicios</a>
+    <a href="#proyectos" (click)="closeMenu()">Proyectos</a>
+    <a href="#nosotros" (click)="closeMenu()">Acerca de nosotros</a>
+    <a href="#contacto" (click)="closeMenu()">Contacto</a>
+  </nav>
+</header>

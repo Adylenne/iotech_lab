@@ -1,0 +1,154 @@
+.team {
+  padding: 110px 8%;
+  background:
+    radial-gradient(circle at left, rgba(0, 229, 255, 0.20), transparent 34%),
+    linear-gradient(120deg, #05242b 0%, #263f9c 62%, #344fc3 100%);
+}
+
+.team h2 {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.team h2 span {
+  color: #00e5ff;
+  text-shadow: 0 0 18px rgba(0, 229, 255, 0.45);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+.member {
+  background: #07131f;
+  padding: 34px 28px;
+  border-radius: 20px;
+  text-align: center;
+  min-height: 420px;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+  background: #00e5ff;
+}
+
+.avatar {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  background: #06131b;
+  display: grid;
+  place-items: center;
+  border: 4px solid #00e5ff;
+  box-shadow: 0 0 22px rgba(0, 229, 255, 0.35);
+}
+
+.avatar span {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.member h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.member strong {
+  color: #00e5ff;
+  font-size: 16px;
+}
+
+.member p {
+  color: #e7fbff;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-top: 18px;
+}
+
+.member:hover h3,
+.member:hover strong,
+.member:hover p,
+.member:hover .avatar span {
+  color: #06131b;
+}
+
+.member:hover .avatar {
+  background: #ffffff;
+  border-color: #06131b;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #06131b;
+  border: 2px solid #00e5ff;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #00e5ff;
+  font-weight: 900;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  background: #ffffff;
+  color: #06131b;
+  transform: translateY(-4px);
+}
+
+.member:hover .links a {
+  border-color: #06131b;
+  color: #06131b;
+  background: #ffffff;
+}
+
+.fb {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.in {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.ig {
+  font-size: 28px;
+  line-height: 1;
+}
+
+@media (max-width: 1000px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .team h2 {
+    font-size: 36px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
